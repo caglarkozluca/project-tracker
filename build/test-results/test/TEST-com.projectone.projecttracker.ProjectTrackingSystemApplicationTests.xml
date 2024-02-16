@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.projectone.projecttracker.ProjectTrackingSystemApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-02-16T20:06:16" hostname="DESKTOP-6V6RF1J" time="1.092">
+  <properties/>
+  <testcase name="contextLoads()" classname="com.projectone.projecttracker.ProjectTrackingSystemApplicationTests" time="1.092"/>
+  <system-out><![CDATA[23:06:05.102 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.projectone.projecttracker.ProjectTrackingSystemApplicationTests]: ProjectTrackingSystemApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+23:06:05.244 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.projectone.projecttracker.ProjectTrackingSystemApplication for test class com.projectone.projecttracker.ProjectTrackingSystemApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.2)
+
+2024-02-16T23:06:06.065+03:00  INFO 20884 --- [    Test worker] .p.ProjectTrackingSystemApplicationTests : Starting ProjectTrackingSystemApplicationTests using Java 17.0.3 with PID 20884 (started by Caglar in C:\git\project-tracker)
+2024-02-16T23:06:06.068+03:00  INFO 20884 --- [    Test worker] .p.ProjectTrackingSystemApplicationTests : No active profile set, falling back to 1 default profile: "default"
+2024-02-16T23:06:08.086+03:00  INFO 20884 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-02-16T23:06:08.117+03:00  INFO 20884 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 0 JPA repository interfaces.
+2024-02-16T23:06:09.372+03:00  INFO 20884 --- [    Test worker] o.s.cloud.context.scope.GenericScope     : BeanFactory id=eadabd25-9beb-3df8-8b8b-61a78ba2b758
+2024-02-16T23:06:10.437+03:00  INFO 20884 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-02-16T23:06:10.826+03:00  INFO 20884 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:e5f06440-2ca5-404f-b88d-360d0e96ccde user=SA
+2024-02-16T23:06:10.830+03:00  INFO 20884 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-02-16T23:06:10.950+03:00  INFO 20884 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-02-16T23:06:11.089+03:00  INFO 20884 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-02-16T23:06:11.198+03:00  INFO 20884 --- [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-02-16T23:06:11.745+03:00  INFO 20884 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-02-16T23:06:12.427+03:00  INFO 20884 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-16T23:06:12.437+03:00  INFO 20884 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-02-16T23:06:13.039+03:00  WARN 20884 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-02-16T23:06:14.807+03:00  WARN 20884 --- [    Test worker] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 9b2b41d9-b5cc-4334-bfd2-98e53270a63d
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-02-16T23:06:15.080+03:00  INFO 20884 --- [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-02-16T23:06:15.136+03:00  INFO 20884 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3a3375d8, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@63bb719d, org.springframework.security.web.context.SecurityContextHolderFilter@776b7fa2, org.springframework.security.web.header.HeaderWriterFilter@5e1535e0, org.springframework.web.filter.CorsFilter@38e100ab, org.springframework.security.web.csrf.CsrfFilter@705ebb4d, org.springframework.security.web.authentication.logout.LogoutFilter@20c55658, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@732ae29c, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@3be60847, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@10b36d8a, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@77d7d2d0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@8b93c88, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@475fb7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@318f47f1, org.springframework.security.web.access.ExceptionTranslationFilter@5a8d03ce, org.springframework.security.web.access.intercept.AuthorizationFilter@62c02089]
+2024-02-16T23:06:16.037+03:00  INFO 20884 --- [    Test worker] .p.ProjectTrackingSystemApplicationTests : Started ProjectTrackingSystemApplicationTests in 10.522 seconds (process running for 12.054)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
